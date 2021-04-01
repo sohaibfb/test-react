@@ -1,20 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 import './style.css';
 import  './LandingPage';
+import './AdminSettings';
+import './Settings/MasterSettings';
 import LandingPage from './LandingPage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import AdminSettings from './AdminSettings';
+import MasterSettings from './Settings/MasterSettings';
+import Iframe from './Iframe';
 
 function App() {
   return (
+
+    <Router>
    <div className="App">
-    
+
+   <nav>
 <div className="headerrow">
   <div className="mainmenu">
-    <a href>Home</a>
+    <Link to="/Home" >Home</Link>
+    
     <div className="submenu">
       <button className="submenubtn">Settings</button>
       <div className="submenu-content">
+      <Link to="/AdminSettings" >AdminSettings</Link>
         <a href="AdminSettings.php" target="mainshow">Admin Settings</a>
+      <Link to="/MasterSettings" >MasterSettings</Link>
         <a href="MasterSettings.html" target="mainshow">Master Settings</a>
         <a href="StructureSettings.php" target="mainshow">Structure Settings</a>
       </div>
@@ -37,19 +53,31 @@ function App() {
       </div>
     </div>
   </div>
-  
-  
+  <Iframe source={<LandingPage/>}/>
+  {/*<iframe src={"/LandingPage"} title='bodydata' name="mainshow" className="bodydata"> </iframe>*/}
 </div>
+</nav> 
 
-         
-          
+<Switch>
+<Route path="/Home">
+<LandingPage/>
+</Route>
+<Route path="/AdminSettings">
+  <AdminSettings/>
+</Route>
+<Route path="/MasterSettings">
+  <MasterSettings/>
+</Route>
+
+</Switch>
 
 
 
-<iframe src={LandingPage} name="mainshow" className="bodydata"> </iframe>
+
 
 
     </div>
+    </Router>
   );
 }
 

@@ -4,7 +4,7 @@ import navlink from 'react-router-dom'
 const LandingPage = () => {
     return (
         <div>
-            <h1>Hello World</h1>
+            <h1>Hello Landing Page</h1>
             <navlink></navlink>
         </div>
 
