@@ -1,16 +1,13 @@
 import React from 'react';
-import navlink from 'react-router-dom'
 
-const LandingPage = () => {
-    return (
-        <div>
-            <h1>Hello Landing Page</h1>
-            <navlink></navlink>
-        </div>
+const LandingPage = () => (
+    <div>
+        <h1>Hello Landing Page</h1>
 
-        
-    );
-}
+    </div>
+
+
+)
 
 export default LandingPage;
 

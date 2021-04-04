@@ -19,7 +19,8 @@ class MasterSettings extends Component {
   <fieldset>
     <div className="settingsmainmenu">
         <Link to='/PersonnelSettings'>Personnel Settings</Link>
-      <a href="mastersettings/PersonnelSettings.html" target="settingsmainshow">Personnel Settings</a>
+        {/*<a href="mastersettings/PersonnelSettings.html" target="settingsmainshow">Personnel Settings</a> */} 
+     
       <a href="mastersettings/EmployementSettings.html" target="settingsmainshow">Employment Settings</a>
       <a href="mastersettings/Financial Settings.html" target="settingsmainshow">Financial Settings</a>
       <a href="mastersettings/Classifications Settings.html" target="settingsmainshow">Classifications Settings</a>

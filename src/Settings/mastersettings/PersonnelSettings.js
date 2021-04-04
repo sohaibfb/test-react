@@ -16,8 +16,9 @@ const PersonnelSettings = () => {
            <div className="subsettingsheader">
   <fieldset>
     <div className="subsettingsmainmenu">
-        <Link to='/PersonnelsettingsTemplate'>Nationalityy</Link>
-      <a href="personnelsettings/Nationality.html" target="subsettingsmainshow">Nationality</a>
+        <Link to='/PersonnelsettingsTemplate'>Nationality</Link>
+        {/*<a href="personnelsettings/Nationality.html" target="subsettingsmainshow">Nationality</a> */}
+      
       <a href="personnelsettings/Religion.html" target="subsettingsmainshow">Religion</a>
       <a href="personnelsettings/HomeCountry.html" target="subsettingsmainshow">Home Country</a>
     </div> 
