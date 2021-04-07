@@ -5,8 +5,12 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import ClassificationSettings from './mastersettings/ClassificationSettings';
+import EmploymentSettings from './mastersettings/EmploymentSettings';
+import FinancialSettings from './mastersettings/FinancialSettings';
   import "./mastersettings/PersonnelSettings"
 import PersonnelSettings from './mastersettings/PersonnelSettings';
+import StructureSettings from './mastersettings/StructureSettings';
 
 class MasterSettings extends Component {
     render() {
@@ -19,12 +23,11 @@ class MasterSettings extends Component {
   <fieldset>
     <div className="settingsmainmenu">
         <Link to='/PersonnelSettings'>Personnel Settings</Link>
-        {/*<a href="mastersettings/PersonnelSettings.html" target="settingsmainshow">Personnel Settings</a> */} 
-     
-      <a href="mastersettings/EmployementSettings.html" target="settingsmainshow">Employment Settings</a>
-      <a href="mastersettings/Financial Settings.html" target="settingsmainshow">Financial Settings</a>
-      <a href="mastersettings/Classifications Settings.html" target="settingsmainshow">Classifications Settings</a>
-      <a href="mastersettings/StructureSettings.html" target="settingsmainshow">Structure Settings</a>
+        <Link to='/EmployementSettings'>EmployementSettings</Link>
+        <Link to='/Financial Settings'>Financial Settings</Link>
+        <Link to='/Classifications Settings'>Classifications Settings</Link>
+        <Link to='/StrcutureSettings'>StructureSettings</Link>
+        
     </div>
   </fieldset>
   {/*<iframe src="mastersettings/PersonnelSettings.html"  title="1" className="settingsbody" />*/}
@@ -36,6 +39,18 @@ class MasterSettings extends Component {
 <Switch>
 <Route path='/PersonnelSettings'>
     <PersonnelSettings/>
+</Route>
+<Route path='/EmployementSettings'>
+    <EmploymentSettings/>
+</Route>
+<Route path='/Financial Settings'>
+    <FinancialSettings/>
+</Route>
+<Route path='/Classifications Settings'>
+    <ClassificationSettings/>
+</Route>
+<Route path='/StrcutureSettings'>
+    <StructureSettings/>
 </Route>
 
 </Switch>

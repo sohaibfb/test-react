@@ -24,15 +24,14 @@ function App() {
           <div className="headerrow">
             <div className="mainmenu">
 
+
               <Link to="/Home" >Home</Link>
 
               <div className="submenu">
                 <button className="submenubtn">Settings</button>
                 <div className="submenu-content">
-                  <Link to="/AdminSettings" >AdminSettings</Link>
-                  <a href="/AdminSettings" target="mainshow">Admin Settings</a>
+                  <Link to="/AdminSettings" >Admin Settings</Link>
                   <Link to="/MasterSettings" >MasterSettings</Link>
-                  {/* <a href="MasterSettings.html" target="mainshow">Master Settings</a>*/}
 
                   <a href="StructureSettings.php" target="mainshow">Structure Settings</a>
                 </div>
@@ -55,7 +54,7 @@ function App() {
                 </div>
               </div>
             </div>
-         <Iframe source={<LandingPage />} />
+            <div className="bodydata" ><Iframe /></div> 
          {/*<iframe src={"/LandingPage"} title='bodydata' name="mainshow" className="bodydata"> </iframe>*/}
             
           </div>
@@ -63,13 +62,13 @@ function App() {
 
         <Switch>
           <Route path="/Home">
-            <LandingPage />
+            <Iframe frame={<LandingPage/>}/>
           </Route>
           <Route path="/AdminSettings">
-            <AdminSettings />
+          <Iframe frame={<AdminSettings />}/>
           </Route>
           <Route path="/MasterSettings">
-            <MasterSettings />
+          <Iframe frame={<MasterSettings />}/>
           </Route>
 
         </Switch>

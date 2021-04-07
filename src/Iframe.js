@@ -5,7 +5,7 @@ class Iframe extends Component {
     render() {
         return (
             
-  <iframe src={this.props.source} title="bodydata" onLoad={this.props.source} className="bodydata" name='mainshow'>  </iframe>
+      <div className='bodydata'>{this.props.frame}</div>
  
 
         );

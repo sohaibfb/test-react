@@ -8,7 +8,7 @@ import {
 import PersonnelsettingsTemplate from './personnelsettings/PersonnelsettingsTemplate';
   import "./personnelsettings/PersonnelsettingsTemplate";
 
-const PersonnelSettings = () => {
+const ClassificationSettings = () => {
     return (
         <Router>
         <div>
@@ -16,23 +16,23 @@ const PersonnelSettings = () => {
            <div className="subsettingsheader">
   <fieldset>
     <div className="subsettingsmainmenu">
-        <Link to='/Nationality'>Nationality</Link>
-        <Link to='/Religion'>Religion</Link>
-        <Link to='/Home Country'>Home Country</Link>
+        <Link to='/Functions'>Functions</Link>
+        <Link to='/Sections'>Sections</Link>
+        <Link to='/Locations'>Locations</Link>
     </div> 
   </fieldset>
   {/*<iframe src="personnelsettings/Nationality.html" title="2" className="subsettingsbody" />*/}
 </div>
 </nav>
 <Switch>
-<Route path='/Nationality'>
-    <PersonnelsettingsTemplate value='1' />
+<Route path='/Functions'>
+    <PersonnelsettingsTemplate value='5' />
 </Route>
-<Route path='/Religion'>
-    <PersonnelsettingsTemplate value='2' />
+<Route path='/Sections'>
+    <PersonnelsettingsTemplate value='6' />
 </Route>
-<Route path='/Home Country'>
-    <PersonnelsettingsTemplate value='3' />
+<Route path='/Locations'>
+    <PersonnelsettingsTemplate value='7' />
 </Route>
 
 </Switch>
@@ -41,4 +41,4 @@ const PersonnelSettings = () => {
     );
 }
 
-export default PersonnelSettings;
+export default ClassificationSettings;
