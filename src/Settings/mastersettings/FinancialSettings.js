@@ -5,8 +5,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import PersonnelsettingsTemplate from './personnelsettings/PersonnelsettingsTemplate';
-  import "./personnelsettings/PersonnelsettingsTemplate";
+import SubsettingsTemplate from './SubsettingsTemplate';
 
 const FinancialSettings = () => {
     return (
@@ -23,7 +22,7 @@ const FinancialSettings = () => {
 </nav>
 <Switch>
 <Route path='/Allowances'>
-    <PersonnelsettingsTemplate value='8' />
+    <SubsettingsTemplate value='8' />
 </Route>
 
 </Switch>

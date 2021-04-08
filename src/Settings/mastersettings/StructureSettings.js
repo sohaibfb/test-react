@@ -5,8 +5,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import PersonnelsettingsTemplate from './personnelsettings/PersonnelsettingsTemplate';
-  import "./personnelsettings/PersonnelsettingsTemplate";
+import SubsettingsTemplate from './SubsettingsTemplate';
 
 const StructureSettings = () => {
     return (
@@ -26,13 +25,13 @@ const StructureSettings = () => {
 </nav>
 <Switch>
 <Route path='/Functions'>
-    <PersonnelsettingsTemplate value='5' />
+    <SubsettingsTemplate value='5' />
 </Route>
 <Route path='/Sections'>
-    <PersonnelsettingsTemplate value='6' />
+    <SubsettingsTemplate value='6' />
 </Route>
 <Route path='/Locations'>
-    <PersonnelsettingsTemplate value='7' />
+    <SubsettingsTemplate value='7' />
 </Route>
 
 </Switch>

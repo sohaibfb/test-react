@@ -1,6 +1,6 @@
 import './App.css';
 import './style.css';
-import  './LandingPage';
+import './LandingPage';
 import './AdminSettings';
 import './Settings/MasterSettings';
 import LandingPage from './LandingPage';
@@ -25,7 +25,7 @@ function App() {
             <div className="mainmenu">
 
 
-              <Link to="/Home" >Home</Link>
+              <Link to="/" >Home</Link>
 
               <div className="submenu">
                 <button className="submenubtn">Settings</button>
@@ -54,24 +54,29 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bodydata" ><Iframe /></div> 
-         {/*<iframe src={"/LandingPage"} title='bodydata' name="mainshow" className="bodydata"> </iframe>*/}
+
+
+            {/*<iframe src={"/LandingPage"} title='bodydata' name="mainshow" className="bodydata"> </iframe>*/}
+
+          
+        
+          <div className="bodydata">
+            <Switch>
+              <Route exact path="/">
+                <LandingPage />
+              </Route>
+              <Route path="/AdminSettings" >
+                <AdminSettings />
+              </Route>
+              <Route path="/MasterSettings">
+                <MasterSettings />
+              </Route>
+
+            </Switch>
             
           </div>
+        </div>
         </nav>
-
-        <Switch>
-          <Route path="/Home">
-            <Iframe frame={<LandingPage/>}/>
-          </Route>
-          <Route path="/AdminSettings">
-          <Iframe frame={<AdminSettings />}/>
-          </Route>
-          <Route path="/MasterSettings">
-          <Iframe frame={<MasterSettings />}/>
-          </Route>
-
-        </Switch>
 
 
 

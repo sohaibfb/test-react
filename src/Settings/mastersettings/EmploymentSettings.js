@@ -5,8 +5,8 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import PersonnelsettingsTemplate from './personnelsettings/PersonnelsettingsTemplate';
-  import "./personnelsettings/PersonnelsettingsTemplate";
+
+import SubsettingsTemplate from './SubsettingsTemplate';
 
 const EmploymentSettings = () => {
     return (
@@ -25,7 +25,7 @@ const EmploymentSettings = () => {
 </nav>
 <Switch>
 <Route path='/Positions'>
-    <PersonnelsettingsTemplate value='4' />
+    <SubsettingsTemplate value='4' />
 </Route>
 
 
