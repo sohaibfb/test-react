@@ -6,8 +6,7 @@ class Iframe extends Component {
   constructor(props){
     super(props)
     this.handleChange = this.handleChange.bind(this);
-    this.state = {frame: <LandingPage/>,
-};
+    this.state = {frame: <LandingPage/>};
   }
 
   handleChange(e) {
