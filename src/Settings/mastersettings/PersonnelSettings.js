@@ -6,7 +6,6 @@ import {
     Link
   } from "react-router-dom";
 import SubsettingsTemplate from './SubsettingsTemplate';
-import Iframe from './../../Iframe';
 
 const PersonnelSettings = () => {
     return (
@@ -26,13 +25,13 @@ const PersonnelSettings = () => {
                     
 
                     <Switch>
-                        <Route path='/Nationality'>
+                        <Route key='nationality' path='/Nationality'>
                             <SubsettingsTemplate value='1' />
                         </Route>
-                        <Route path='/Religion'>
+                        <Route key='religion' path='/Religion'>
                             <SubsettingsTemplate value='2' />
                         </Route>
-                        <Route path='/Home Country'>
+                        <Route  key='HomeCountry'path='/Home Country'>
                             <SubsettingsTemplate value='3' />
                         </Route>
 

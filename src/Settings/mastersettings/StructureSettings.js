@@ -24,14 +24,14 @@ const StructureSettings = () => {
 </div>
 </nav>
 <Switch>
-<Route path='/Functions'>
+<Route key='Functions' path='/Functions'>
     <SubsettingsTemplate value='5' />
 </Route>
-<Route path='/Sections'>
+<Route key='Sections' path='/Sections'>
     <SubsettingsTemplate value='6' />
 </Route>
-<Route path='/Locations'>
-    <SubsettingsTemplate value='7' />
+<Route key='Locations' path='/Locations'>
+    <SubsettingsTemplate value='7'  />
 </Route>
 
 </Switch>

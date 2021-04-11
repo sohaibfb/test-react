@@ -12,7 +12,6 @@ import {
 } from "react-router-dom";
 import AdminSettings from './AdminSettings';
 import MasterSettings from './Settings/MasterSettings';
-import Iframe from './Iframe';
 
 function App() {
   return (

@@ -8,10 +8,8 @@ import {
 import ClassificationSettings from './mastersettings/ClassificationSettings';
 import EmploymentSettings from './mastersettings/EmploymentSettings';
 import FinancialSettings from './mastersettings/FinancialSettings';
-import "./mastersettings/PersonnelSettings"
 import PersonnelSettings from './mastersettings/PersonnelSettings';
 import StructureSettings from './mastersettings/StructureSettings';
-import Iframe from './../Iframe';
 import './../style.css';
 
 class MasterSettings extends Component {
